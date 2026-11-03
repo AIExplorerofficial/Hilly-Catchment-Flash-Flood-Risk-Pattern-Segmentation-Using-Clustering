@@ -1,0 +1,131 @@
+{
+  "full": {
+    "n_cells": 383,
+    "features": [
+      "elev_mean",
+      "slope_mean",
+      "p99_wetday",
+      "jjas_share",
+      "mean_annual_rain",
+      "cv_annual_rain",
+      "heavy_days_per_yr"
+    ],
+    "log1p_applied": [
+      "jjas_share",
+      "cv_annual_rain",
+      "heavy_days_per_yr"
+    ],
+    "dropped_due_to_correlation": [
+      [
+        "relief",
+        "slope_mean",
+        0.949
+      ],
+      [
+        "mean_ann_max3d",
+        "heavy_days_per_yr",
+        0.904
+      ],
+      [
+        "sdii",
+        "p99_wetday",
+        0.929
+      ],
+      [
+        "wetdays_per_yr",
+        "mean_annual_rain",
+        0.888
+      ],
+      [
+        "p95_wetday",
+        "p99_wetday",
+        0.94
+      ],
+      [
+        "mean_ann_max1d",
+        "p99_wetday",
+        0.931
+      ],
+      [
+        "elev_std",
+        "slope_mean",
+        0.941
+      ],
+      [
+        "slope_p95",
+        "slope_mean",
+        0.976
+      ],
+      [
+        "frac_steep30",
+        "slope_mean",
+        0.952
+      ]
+    ],
+    "corr_threshold": 0.85
+  },
+  "hills": {
+    "n_cells": 220,
+    "features": [
+      "elev_mean",
+      "slope_mean",
+      "p99_wetday",
+      "jjas_share",
+      "relief",
+      "mean_annual_rain",
+      "cv_annual_rain"
+    ],
+    "log1p_applied": [
+      "p99_wetday",
+      "cv_annual_rain"
+    ],
+    "dropped_due_to_correlation": [
+      [
+        "heavy_days_per_yr",
+        "p99_wetday",
+        0.912
+      ],
+      [
+        "mean_ann_max3d",
+        "p99_wetday",
+        0.904
+      ],
+      [
+        "sdii",
+        "p99_wetday",
+        0.922
+      ],
+      [
+        "wetdays_per_yr",
+        "mean_annual_rain",
+        0.905
+      ],
+      [
+        "p95_wetday",
+        "p99_wetday",
+        0.949
+      ],
+      [
+        "mean_ann_max1d",
+        "p99_wetday",
+        0.941
+      ],
+      [
+        "elev_std",
+        "relief",
+        0.94
+      ],
+      [
+        "slope_p95",
+        "slope_mean",
+        0.886
+      ],
+      [
+        "frac_steep30",
+        "slope_mean",
+        0.964
+      ]
+    ],
+    "corr_threshold": 0.85
+  }
+}
